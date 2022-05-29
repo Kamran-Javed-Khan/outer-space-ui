@@ -1,0 +1,41 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    width: 30em;
+    margin: 1em;
+    border-radius: 1em;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+}
+
+.name, .overview {
+    text-align: center;
+    font-size: large;
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    margin-top: -20em;
+    padding: 0 1em;
+    transform: rotateY(180deg);
+}

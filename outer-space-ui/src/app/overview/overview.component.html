@@ -1,0 +1,17 @@
+<div class="flex">
+    <div *ngFor="let data of overviewData">
+        <div class="card">
+            <div class="card-front">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Moon">
+                </div>
+                <div class="name">
+                    <p>{{data.name}}</p>
+                </div>
+            </div>
+            <div class="card-back">
+                <p>{{data.overview}}</p>
+            </div>
+        </div>
+    </div>
+</div>
